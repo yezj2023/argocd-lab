@@ -16,6 +16,7 @@ spec:
       containers:
       - name: myapp
         image: nginx:latest
+        command: ["bash","-c","tail -f /dev/null"]
         ports:
         - containerPort: 80
         
