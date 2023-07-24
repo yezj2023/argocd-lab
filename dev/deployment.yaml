@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nginx:latest
+        image: busybox
         command: ["bash","-c","tail -f /dev/null"]
         ports:
         - containerPort: 80
