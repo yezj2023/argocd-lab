@@ -19,15 +19,3 @@ spec:
         ports:
         - containerPort: 80
         
-# service.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: myapp-service
-spec:
-  selector:
-    app: myapp
-  ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
